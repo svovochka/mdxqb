@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  composer:
+    image: library/composer:latest
+    command:
+      - /bin/sh
+      - -c
+      - |
+        cd /app
+        composer install --no-interaction --ignore-platform-reqs --no-scripts
+        chmod -R 777 /app/vendor
+    tty: true
+    volumes:
+      - "./:/app"

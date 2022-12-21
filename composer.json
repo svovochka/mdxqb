@@ -1,0 +1,12 @@
+{
+  "type": "library",
+  "license": "proprietary",
+  "name": "svovochka/mdxqb",
+  "description": "MDX query builder",
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Mdxqb\\": "src"
+    }
+  }
+}
